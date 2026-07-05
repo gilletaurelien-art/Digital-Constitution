@@ -20,6 +20,10 @@ Le texte canonique est [CONSTITUTION.md](CONSTITUTION.md) (français). Les tradu
 
 Ajoutez `translations/<code-langue>/CONSTITUTION.md` par pull request, en indiquant la version canonique traduite. Une traduction fidèle vaut mieux qu'une traduction élégante.
 
+## Interpréter — la jurisprudence des cas
+
+Une constitution vivante ne grandit pas seulement par ses amendements : elle grandit par la manière dont on l'applique à des situations nouvelles. Le dossier [/cases](cases/) est sa jurisprudence — chaque cas documente comment les articles s'incarnent (ou échouent à s'incarner) dans un système réel, preuves à l'appui. Proposer un cas vaut autant que proposer un amendement : ajoutez `cases/<nom>.md` par pull request, en n'affirmant que ce que vous pouvez montrer.
+
 ## Adopter et signer
 
 Inscrivez votre nom ou votre organisation dans [SIGNATORIES.md](SIGNATORIES.md) par pull request. Conformément à l'**article 15 (honnêteté d'affichage)**, une signature honnête mentionne aussi les articles que vous ne respectez pas encore et votre trajectoire pour y parvenir. Une signature parfaite est suspecte ; une signature datée et documentée est crédible.

@@ -13,7 +13,8 @@ Son ambition : un référentiel commun pour construire des technologies respectu
 ## Lire
 
 - 📜 **[La Constitution](CONSTITUTION.md)** — texte canonique (français), version 1.1
-- 🇬🇧 **[English translation](translations/en/CONSTITUTION.md)**
+- 🕰️ **[WHY](WHY.md)** — pourquoi une constitution numérique devient nécessaire, historiquement
+- 🇬🇧 **[English translation](translations/en/CONSTITUTION.md)** · [Why](translations/en/WHY.md)
 - 🧭 **[Le cas fondateur : Mana Family](cases/mana-family.md)** — comment un produit réel implémente chaque article, jusque dans son schéma de données
 
 ## Participer
