@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>La Constitution des artisans du numérique</title>
+<meta name="description" content="Déclaration des droits numériques de la personne — les renoncements volontaires que ses signataires s'imposent. Un texte fondateur de l'univers Mana." />
+<meta property="og:title" content="La Constitution des artisans du numérique" />
+<meta property="og:description" content="Déclaration des droits numériques de la personne. Ce que nous refuserons toujours de faire." />
+<meta property="og:type" content="article" />
+<style>
+  /* ============================================================
+     LA CONSTITUTION — charte « Haute Mer & Clarté calme »
+     Nuit = Noir Atlantique (défaut) · Jour = Écume & Toile de Lin.
+     Aucune police web, aucun script : un texte fondateur ne dépend
+     de rien. Serif de mémoire, colonne de lecture, or letterpress.
+     ============================================================ */
+  :root {
+    --noir-atlantique: #0b131f;
+    --ecume: #f8f9fa;
+    --toile-de-lin: #eae6df;
+    --or-mana: #e5b842;
+    --or-doux: #d8b354;
+    --bleu-horizon: #2b5275;
+
+    --fond: var(--noir-atlantique);
+    --encre: #edf1f6;
+    --brume: #93a3b8;
+    --etoile: #f5edd8;
+    --filet: rgba(234, 230, 223, 0.14);
+
+    --serif: 'Iowan Old Style', 'Palatino Linotype', 'Palatino', 'Book Antiqua', Georgia, 'Times New Roman', serif;
+    --sans: 'Inter', 'Avenir Next', -apple-system, 'Segoe UI', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --fond: var(--ecume);
+      --encre: #24313f;
+      --brume: #6d7a88;
+      --etoile: var(--bleu-horizon);
+      --or-doux: #b8901f;
+      --filet: rgba(43, 82, 117, 0.22);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(ellipse at 50% -10%, color-mix(in srgb, var(--fond) 84%, var(--bleu-horizon)), var(--fond) 62%);
+    min-height: 100vh;
+    color: var(--encre);
+    font-family: var(--serif);
+    font-size: 1.06rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .parchemin {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: clamp(2.4rem, 7vw, 5rem) 1.4rem 4rem;
+  }
+
+  /* — Le fronton — */
+  .fronton { text-align: center; padding-bottom: 1.2rem; }
+  .fronton h1 {
+    font-size: clamp(1.7rem, 5.5vw, 2.5rem);
+    line-height: 1.18;
+    letter-spacing: 0.015em;
+    color: var(--etoile);
+    font-weight: 600;
+    margin: 0 0 0.6rem;
+  }
+  .fronton .sous-titre {
+    font-style: italic;
+    color: var(--or-doux);
+    font-size: 1.1rem;
+    margin: 0 0 1rem;
+  }
+  .fronton .version {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    color: var(--brume);
+    margin: 0;
+  }
+
+  /* — La règle d'or letterpress — */
+  .filet-or {
+    border: none;
+    height: 1px;
+    max-width: 8rem;
+    margin: 2.2rem auto;
+    background: linear-gradient(90deg, transparent, var(--or-mana), transparent);
+    opacity: 0.7;
+  }
+
+  /* — L'épigraphe — */
+  .epigraphe {
+    text-align: center;
+    font-style: italic;
+    color: var(--etoile);
+    font-size: 1.18rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 34rem;
+  }
+  .epigraphe strong { color: var(--or-mana); font-weight: 600; font-style: normal; }
+
+  /* — Les titres de section — */
+  h2.titre {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--or-doux);
+    font-weight: 600;
+    margin: 3rem 0 0.4rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--filet);
+  }
+  h2.titre .fr { display: block; font-size: 1.35rem; letter-spacing: 0.01em; text-transform: none; color: var(--etoile); font-family: var(--serif); margin-top: 0.35rem; font-weight: 600; }
+
+  h3.preambule {
+    font-size: 1.35rem;
+    color: var(--etoile);
+    font-weight: 600;
+    margin: 3rem 0 0.6rem;
+  }
+
+  p { margin: 0 0 1.2rem; }
+
+  /* — Les articles — */
+  .article { margin: 0 0 1.3rem; }
+  .article .lead {
+    color: var(--or-doux);
+    font-weight: 600;
+  }
+  strong.souligne { color: var(--etoile); font-weight: 600; }
+
+  /* — La conclusion — */
+  .conclusion { margin-top: 1rem; }
+  .conclusion p:last-of-type {
+    font-style: italic;
+    color: var(--etoile);
+  }
+
+  /* — Le pied — */
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--filet);
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--brume);
+    text-align: center;
+    line-height: 1.7;
+  }
+  footer a { color: var(--or-doux); text-decoration: none; border-bottom: 1px dotted var(--filet); }
+  footer a:hover { color: var(--or-mana); border-bottom-color: var(--or-mana); }
+  footer .liens { margin-bottom: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; justify-content: center; }
+  footer .signature { font-family: var(--serif); font-style: italic; color: var(--brume); max-width: 30rem; margin: 1rem auto 0; }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<main class="parchemin">
+
+  <header class="fronton">
+    <h1>La Constitution des artisans du numérique</h1>
+    <p class="sous-titre">Déclaration des droits numériques de la personne</p>
+    <p class="version">Version 1.1 — juillet 2026 — texte vivant : une constitution n'est jamais terminée.</p>
+  </header>
+
+  <hr class="filet-or" />
+
+  <p class="epigraphe">
+    <strong>Toute technologie exerce un pouvoir.</strong><br />
+    Toute personne qui conçoit une technologie porte donc une responsabilité.
+  </p>
+
+  <hr class="filet-or" />
+
+  <h3 class="preambule">Préambule</h3>
+  <p>Les technologies numériques ne sont pas neutres. Elles organisent l'attention, influencent les comportements, façonnent les relations et conservent les traces des vies humaines. Toute architecture qui collecte, traite ou conserve des données exerce de ce fait une responsabilité envers les personnes — et cette responsabilité est supérieure aux intérêts économiques.</p>
+  <p>Ce texte n'est pas une liste de valeurs : il est fait de <strong class="souligne">renoncements volontaires</strong> — des limites que ses signataires s'imposent, même lorsqu'elles leur coûtent. Renoncer à capter l'attention. Renoncer à vendre les personnes. Renoncer au levier du regret. Renoncer à l'enfermement. Renoncer aux métriques qui détruisent le repos.</p>
+  <p>Nous affirmons qu'une économie numérique peut prospérer sans transformer l'intimité humaine en marchandise. La présente Constitution en énonce les conditions.</p>
+
+  <h2 class="titre">Article premier<span class="fr">De la nature des données humaines</span></h2>
+  <p>Toute donnée numérique représente une personne, une relation ou une œuvre humaine. À ce titre, <strong class="souligne">les données humaines ne sont pas un actif</strong>. Elles ne constituent pas une matière première, ne peuvent être considérées comme une simple ressource économique, et leur détention crée un devoir, jamais un droit de propriété.</p>
+  <p>Ce changement de catégorie précède tous les articles suivants : ce qui est dit ensuite n'est pas une liste de protections, mais la conséquence de cette nature.</p>
+
+  <h2 class="titre">Titre I<span class="fr">De la personne</span></h2>
+  <p class="article"><span class="lead">Article 2 — De la dignité.</span> Toute personne est une fin, jamais une ressource à extraire, un profil à exploiter ou une métrique à maximiser. Aucun objectif commercial, technique ou stratégique ne justifie la manipulation, la dépendance provoquée, la surveillance cachée ou l'exploitation des vulnérabilités humaines.</p>
+  <p class="article"><span class="lead">Article 3 — De la souveraineté.</span> Toute personne demeure souveraine de ses données. Elle peut en masquer l'accès à autrui sans détruire sa propre archive, refuser de figurer dans une œuvre collective — y compris déjà payée par un tiers —, et exercer son droit à l'effacement sur ce qui la concerne. Le droit de la personne l'emporte toujours sur le droit de la transaction.</p>
+  <p class="article"><span class="lead">Article 4 — Du départ.</span> Toute personne peut quitter un service en emportant l'intégralité de ses données dans un format ouvert, documenté et réutilisable. Aucun enfermement technique ne peut constituer une stratégie commerciale : on demeure par attachement, jamais par captivité.</p>
+  <p class="article"><span class="lead">Article 5 — Des vulnérables.</span> Les enfants, les aînés, les personnes endeuillées, isolées, malades ou fragilisées bénéficient d'une protection renforcée : infrastructures dédiées, absence de notation, de comparaison et d'exposition. La vulnérabilité ne peut jamais servir de levier de conversion. Pour les mineurs, la majorité s'accompagne d'une remise : l'historique de leur vie numérique leur est transféré en pleine souveraineté — un passage de dignité, non un changement de permission technique.</p>
+
+  <h2 class="titre">Titre II<span class="fr">Des rythmes</span></h2>
+  <p class="article"><span class="lead">Article 6 — De l'attention.</span> L'attention humaine n'est pas une matière première. Notifications, recommandations et relances doivent servir un besoin réel de la personne, jamais l'obsession du retour, du clic ou du temps passé. Une technologie de qualité maximise la valeur du temps choisi, non la durée du temps capté.</p>
+  <p class="article"><span class="lead">Article 7 — Du silence et du repos.</span> L'absence d'activité est un état légitime. Aucun système n'interprétera le silence comme un manque, une dette ou un problème à corriger, et ne relancera une personne inactive. Toute personne possède le droit d'être absente ; les systèmes respectent les rythmes humains au lieu de les corriger. <strong class="souligne">Un système humain ne panique pas devant le silence de ses utilisateurs.</strong></p>
+  <p class="article"><span class="lead">Article 8 — De l'asymétrie de l'attention.</span> Un geste d'attention porté à autrui peut être rendu visible par un signal doux. L'absence de ce geste ne doit jamais être visible, quantifiée ni déductible : on peut savoir qu'une personne a été présente ; on ne doit jamais pouvoir désigner celle qui ne l'a pas été. Sont contraires à cette Constitution les compteurs de dette relationnelle, les accusés de lecture imposés et les scores de présence.</p>
+  <p class="article"><span class="lead">Article 9 — Des architectures manipulatoires.</span> Sont proscrites les interfaces qui poussent une personne à agir contre son intérêt, dissimulent le refus, compliquent la sortie, ou rendent l'option la plus saine moins visible que la plus rentable. Est proscrite en particulier l'exploitation du regret : la peur de perdre, la culpabilité et l'urgence artificielle ne sont jamais des instruments de croissance. Un consentement obtenu par fatigue n'est pas un consentement.</p>
+
+  <h2 class="titre">Titre III<span class="fr">De la mémoire</span></h2>
+  <p class="article"><span class="lead">Article 10 — De l'inaliénabilité.</span> L'accès d'une personne à ses liens fondamentaux et à l'historique brut de sa vie numérique ne peut être suspendu à un paiement, à une menace d'expiration ou à une suppression punitive. On peut vendre de l'espace pour l'avenir ; on ne menace jamais la survie du passé. La mémoire ne se rançonne pas.</p>
+  <p class="article"><span class="lead">Article 11 — De la minimisation et de la non-marchandisation.</span> Un service collecte le minimum nécessaire, conserve avec raison et explique ses durées. Les données personnelles ne sont ni vendues, ni louées, ni cédées à des fins publicitaires. Aucun contenu personnel n'entraîne de système d'intelligence artificielle sans un consentement explicite, spécifique et révocable : la machine assiste, elle ne possède jamais les histoires humaines.</p>
+  <p class="article"><span class="lead">Article 12 — De l'économie légitime.</span> La valeur d'un service provient du service rendu, jamais de l'exploitation invisible des personnes. La monétisation porte sur le travail ajouté — la mise en forme, l'édition, les objets, l'accompagnement — jamais sur l'accès aux liens humains eux-mêmes.</p>
+
+  <h2 class="titre">Titre IV<span class="fr">Des responsabilités</span></h2>
+  <p class="article"><span class="lead">Article 13 — De la transparence.</span> Toute décision automatisée ayant un effet significatif sur une personne doit pouvoir être expliquée dans un langage compréhensible. La personne sait quand une machine intervient, selon quelles logiques principales, et avec quels recours.</p>
+  <p class="article"><span class="lead">Article 14 — De la responsabilité mesurable.</span> Une intention éthique ne suffit pas : elle doit apparaître dans l'architecture, les schémas de données, les métriques et les arbitrages budgétaires. <strong class="souligne">La bienveillance n'est pas une tonalité marketing : c'est une contrainte d'architecture.</strong> Les indicateurs de croissance et d'engagement demeurent subordonnés à la confiance, à la clarté et à la réduction de la charge mentale. L'activité de ceux qui ont choisi le silence n'est jamais mesurée contre eux.</p>
+  <p class="article"><span class="lead">Article 15 — De l'honnêteté d'affichage.</span> Rien n'est présenté comme acquis tant que ce n'est pas construit. Une promesse de sécurité, de chiffrement ou de pérennité s'affiche comme un engagement daté, jamais comme un fait accompli. Les écarts entre les principes déclarés et la pratique sont documentés publiquement, avec leurs mesures correctives.</p>
+  <p class="article"><span class="lead">Article 16 — Du recours et de la gouvernance.</span> Tout système peut nuire, même involontairement : des voies simples permettent de signaler, contester, comprendre et obtenir réparation. Chaque évolution majeure d'un système est examinée à la lumière de ses effets humains — qui gagne du pouvoir, qui devient exposé, qui peut partir, qui paie le vrai coût. La présente Constitution est ouverte : elle peut être adoptée, amendée, traduite, critiquée et forkée par quiconque.</p>
+
+  <hr class="filet-or" />
+
+  <section class="conclusion">
+    <h3 class="preambule">Conclusion</h3>
+    <p>Nous croyons qu'un autre numérique est possible : un numérique où les données ne sont plus une marchandise, où la confiance vaut davantage que la captation, où le silence est respecté, où les personnes restent souveraines.</p>
+    <p>Un système vraiment humain ne se mesure pas seulement à ce qu'il permet de faire, mais à ce qu'il refuse de faire aux personnes. Aucune innovation ne mérite d'être appelée progrès si elle exige que l'humain devienne plus petit pour que le système devienne plus grand.</p>
+    <p>Parce que derrière chaque donnée se trouve un être humain — et qu'aucun modèle économique ne devrait jamais le faire oublier.</p>
+  </section>
+
+  <footer>
+    <div class="liens">
+      <a href="https://github.com/gilletaurelien-art/Digital-Constitution">Texte intégral &amp; amendements</a>
+      <a href="https://github.com/gilletaurelien-art/Digital-Constitution/blob/main/SIGNATORIES.md">Signataires</a>
+      <a href="https://github.com/gilletaurelien-art/Digital-Constitution/tree/main/translations/en">English version</a>
+      <a href="https://github.com/gilletaurelien-art/Digital-Constitution/blob/main/LICENSE">Licence</a>
+      <a href="https://manahome.org">L'univers Mana</a>
+    </div>
+    <p class="signature">Un texte ouvert : adoptez-le, amendez-le, traduisez-le, forkez-le. Une constitution n'est jamais terminée.</p>
+  </footer>
+
+</main>
+</body>
+</html>
