@@ -8,6 +8,7 @@
 <meta property="og:title" content="La Constitution des artisans du numérique" />
 <meta property="og:description" content="Déclaration des droits numériques de la personne. Ce que nous refuserons toujours de faire." />
 <meta property="og:type" content="article" />
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style>
   /* ============================================================
      LA CONSTITUTION — charte « Haute Mer & Clarté calme »
@@ -16,30 +17,35 @@
      de rien. Serif de mémoire, colonne de lecture, or letterpress.
      ============================================================ */
   :root {
+    /* Charte MANA « clarté d'abord » — blanc, bleu→violet, Philosopher.
+       L'accent (ex-or) est réaffecté au violet : tout le document suit. */
     --noir-atlantique: #0b131f;
     --ecume: #f8f9fa;
     --toile-de-lin: #eae6df;
-    --or-mana: #e5b842;
-    --or-doux: #d8b354;
-    --bleu-horizon: #2b5275;
+    --bleu: #3A2BE3;
+    --violet: #B221E0;
+    --bleu-horizon: #7c6fe0;
 
-    --fond: var(--noir-atlantique);
-    --encre: #edf1f6;
-    --brume: #93a3b8;
-    --etoile: #f5edd8;
-    --filet: rgba(234, 230, 223, 0.14);
+    --fond: var(--ecume);
+    --encre: #2a2440;
+    --brume: #6b6b84;
+    --etoile: #26224a;
+    --or-mana: #8b3fc0;
+    --or-doux: #8b3fc0;
+    --filet: rgba(58, 43, 227, 0.16);
 
-    --serif: 'Iowan Old Style', 'Palatino Linotype', 'Palatino', 'Book Antiqua', Georgia, 'Times New Roman', serif;
-    --sans: 'Inter', 'Avenir Next', -apple-system, 'Segoe UI', system-ui, sans-serif;
+    --serif: 'Philosopher', 'Iowan Old Style', 'Palatino', Georgia, serif;
+    --sans: 'Inter', 'Avenir Next', -apple-system, 'SF Pro', 'Segoe UI', system-ui, sans-serif;
   }
-  @media (prefers-color-scheme: light) {
+  @media (prefers-color-scheme: dark) {
     :root {
-      --fond: var(--ecume);
-      --encre: #24313f;
-      --brume: #6d7a88;
-      --etoile: var(--bleu-horizon);
-      --or-doux: #b8901f;
-      --filet: rgba(43, 82, 117, 0.22);
+      --fond: var(--noir-atlantique);
+      --encre: #edf1f6;
+      --brume: #93a3b8;
+      --etoile: #f0eaff;
+      --or-mana: #CDA9FF;
+      --or-doux: #CDA9FF;
+      --filet: rgba(183, 166, 255, 0.22);
     }
   }
 
@@ -94,8 +100,8 @@
     height: 1px;
     max-width: 8rem;
     margin: 2.2rem auto;
-    background: linear-gradient(90deg, transparent, var(--or-mana), transparent);
-    opacity: 0.7;
+    background: linear-gradient(90deg, transparent, var(--bleu), var(--violet), transparent);
+    opacity: 0.55;
   }
 
   /* — L'épigraphe — */
