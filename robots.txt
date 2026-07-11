@@ -1,0 +1,5 @@
+# https://constitution.manahome.org
+User-agent: *
+Allow: /
+
+Sitemap: https://constitution.manahome.org/sitemap.xml
